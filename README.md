@@ -25,54 +25,35 @@ It features modular design with Object-Oriented Programming (OOP) principles and
 - **IDE Tested On**: CLion
 
 ## Installation
-1. Clone the repository:
-```bash
-git clone https://github.com/IbrahimHashem0/School-Management-System.git
-Navigate to the project folder:
+1. Clone the repository:  
+`git clone https://github.com/IbrahimHashem0/School-Management-System.git`
+2. Navigate to the project folder:  
+`cd School-Management-System`
+3. Create a build directory and compile:  
+`mkdir build`  
+`cd build`  
+`cmake ..`  
+`cmake --build .`
+4. Run the application:  
+`./School_Management_System`  *(On Windows: School_Management_System.exe)*
 
-cd School-Management-System
-
-
-Create a build directory and compile:
-
-mkdir build
-cd build
-cmake ..
-cmake --build .
-
-
-Run the application:
-
-./School_Management_System   # On Windows: School_Management_System.exe
-
-Usage
-
+## Usage
 Run the program and follow the console menu:
+- Add Student
+- Enroll in a Course
+- Remove a Course
+- Show Student Info
+- Exit
 
-Add Student
+Notes:
+- Maximum 5 courses per student.
+- Students must login using ID and password for course operations and info display.
 
-Enroll in a Course
+## Future Improvements
+- Add persistent storage (e.g., SQLite or files) to save student data.
+- Implement search and sorting for students.
+- Add role-based access for admins and students.
+- Integrate a GUI for more interactive experience.
 
-Remove a Course
-
-Show Student Info
-
-Exit
-
-Maximum 5 courses per student.
-
-Students must login using ID and password for course operations and info display.
-
-Future Improvements
-
-Add persistent storage (e.g., SQLite or files) to save student data.
-
-Implement search and sorting for students.
-
-Add role-based access for admins and students.
-
-Integrate a GUI for more interactive experience.
-
-License
-
+## License
 This project is open-source under the MIT License.
